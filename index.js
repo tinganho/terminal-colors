@@ -74,10 +74,10 @@ function _stylize(str, style) {
 };
 
 /**
- * Style names
+ * Styles
  */
 
-var names = [
+var styles = [
   'bold',
   'underline',
   'strikethrough',
@@ -121,7 +121,7 @@ var names = [
  * Iterate through all default styles and colors
  */
 
-names.forEach(function (style) {
+styles.forEach(function (style) {
   _stylize(style, function () {
     return stylize(this, style);
   });
