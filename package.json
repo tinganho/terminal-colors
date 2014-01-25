@@ -1,0 +1,23 @@
+{
+  "name": "terminal-colors",
+  "version": "0.0.0",
+  "description": "Terminal colors made easy",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tinganho/terminal-colors"
+  },
+  "keywords": [
+    "terminal",
+    "colors"
+  ],
+  "author": "Tingan Ho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tinganho/terminal-colors/issues"
+  },
+  "homepage": "https://github.com/tinganho/terminal-colors"
+}
