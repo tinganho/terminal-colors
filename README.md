@@ -1,8 +1,7 @@
 terminal-colors
 ===============
 
-NPM doesn't have any library that support light colors. So I just made this `terminal-colors` for that reason. 
-Please checkout http://en.wikipedia.org/wiki/ANSI_escape_code for more info about terminal colors.
+Utilize more terminal colors. Both bright and normal colors http://en.wikipedia.org/wiki/ANSI_escape_code#Colors.
 
 # Install
 ```
