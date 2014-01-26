@@ -121,8 +121,8 @@ var styles = [
  * Iterate through all default styles and colors
  */
 
-styles.forEach(function (style) {
-  _stylize(style, function () {
-    return stylize(this, style);
+styles.forEach(function(style) {
+  _addProperty(style, function() {
+    return _stylize(this, style);
   });
 });
