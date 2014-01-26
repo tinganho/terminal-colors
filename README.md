@@ -8,6 +8,27 @@ Please checkout http://en.wikipedia.org/wiki/ANSI_escape_code for more info abou
 ```
 npm install terminal-colors
 ```
+## colors and styles!
+
+- bold
+- italic
+- underline
+- yellow
+- lightYellow
+- cyan
+- lightCyan
+- white
+- lightWhite
+- magenta
+- lightMagenta
+- green
+- lightGreen
+- red
+- lightRed
+- grey
+- lightGrey
+- blue
+- lightBlue
 
 # Usage
 
