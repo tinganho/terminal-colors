@@ -1,17 +1,3 @@
-
-/**
- * Prototypes the string object to have additional method calls that add terminal colors
- *
- * @param {String} color
- * @param {Function} func
- * @return {void}
- * @api private
- */
-
-var _addProperty = function (color, func) {
-  String.prototype.__defineGetter__(color, func);
-};
-
 /**
  * Format the strings with right terminal codes to style the output
  *
@@ -135,7 +121,7 @@ var styles = [
  */
 
 styles.forEach(function(style) {
-  _addProperty(style, function() {
+  String.prototype.__defineGetter__(style, function() {
     return _stylize(this, style);
   });
 });
