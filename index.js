@@ -69,6 +69,11 @@ function _stylize(str, style) {
     'yellowBG' : ['\x1B[43m', '\x1B[49m'],
     'lightYellowBG' : ['\x1B[103m', '\x1B[49m'],
   };
+  // gray / grey
+  styles.grey        = styles.gray        = styles.lightBlack;
+  styles.greyBG      = styles.grayBG      = styles.lightBlackBG;
+  styles.lightGrey   = styles.lightGray   = styles.white;
+  styles.lightGreyBG = styles.lightGrayBG = styles.whiteBG;
 
   return styles[style][0] + str + styles[style][1];
 };
@@ -99,6 +104,10 @@ var styles = [
   'lightCyan',
   'magenta',
   'lightMagenta',
+  'grey',
+  'lightGrey',
+  'gray',
+  'lightGray',
   'blackBG',
   'lightBlackBG',
   'yellowBG',
@@ -114,7 +123,11 @@ var styles = [
   'cyanBG',
   'lightCyanBG',
   'magentaBG',
-  'lightMagentaBG'
+  'lightMagentaBG',
+  'greyBG',
+  'lightGreyBG',
+  'grayBG',
+  'lightGrayBG'
 ];
 
 /**
