@@ -57,19 +57,6 @@ styles.lightGreyBG = styles.lightGrayBG = styles.whiteBG;
 
 
 /**
- * Format the strings with right terminal codes to style the output
- *
- * @param {String} str
- * @param {String} style
- * @return {String} proper formated style string
- * @api private
- */
-
-function _stylize(str, style) {
-  return styles[style][0] + str + styles[style][1];
-};
-
-/**
  * Iterate through all default styles and colors
  */
 
@@ -78,7 +65,7 @@ Object.keys(styles).forEach(function(style){
     enumerable: false,
     configurable: true,
     get: function() {
-      return _stylize(this, style);
+      return styles[style][0] + this + styles[style][1];
     }
   });
 });
