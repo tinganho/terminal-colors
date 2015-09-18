@@ -74,7 +74,11 @@ function _stylize(str, style) {
  */
 
 Object.keys(styles).forEach(function(style){
-  String.prototype.__defineGetter__(style, function() {
-    return _stylize(this, style);
+  Object.defineProperty(String.prototype, style, {
+    enumerable: false,
+    configurable: true,
+    get: function() {
+      return _stylize(this, style);
+    }
   });
 });
